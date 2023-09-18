@@ -12,7 +12,7 @@ const getData = async url => {
     return await res.json()
 }
 
-const chunk = (full, chunkSize) => {
+const chunk = (array, chunkSize) => {
     const chunks = []
     for (let i = 0; i < array.length; i += chunkSize) {
         chunks.push(array.slice(i, i + chunkSize))
