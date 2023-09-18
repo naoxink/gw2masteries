@@ -1,0 +1,56 @@
+body, html {
+    font-size: 14px;
+    font-family: serif;
+    text-align: center;
+  }
+  
+  #api-key {
+    border: 1px solid #333;
+    padding: .5rem;
+    width: 30%;
+  }
+  
+  #load-masteries-btn {
+    padding: .5rem;
+    background-color: #333;
+    color: #F4F4F4;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  #content {
+    display: flex;
+    align-items: stretch;
+    justify-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  
+  .mastery-zone-container {
+    padding: 1rem;
+  }
+  
+  .mastery-zone-points-container {
+    display: flex;
+    align-items: stretch;
+    justify-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .mastery-zone-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mastery-zone-total-earned {
+    font-size: 1.2rem;
+    background-color: #cbf5c6;
+    padding: 0.2rem 0.5rem;
+  }
+  .mastery-zone-total-spent {
+    font-size: 1.2rem;
+    background-color: #b7bbb730;
+    padding: 0.2rem 0.5rem;
+  }
