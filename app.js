@@ -23,7 +23,7 @@ const chunk = (array, chunkSize) => {
 const getAccountMasteries = async token => {
     const res = await getAuthData(API_MASTERIES_RESUME_ENDPOINT, token)
     if(res && res.unlocked){
-        const chunks = chunk(res.unlocked, 200)
+        const chunks = chunk(res.unlocked, 15)
         res.unlocked = []
         for(let i = 0; i < chunks.length; i++){
             const resDetails = await getData(`${API_MASTERIES_DETAIL_ENDPOINT}?ids=${chunks[i].join(',')}&lang=${LANG}`)
