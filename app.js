@@ -3,7 +3,7 @@ const API_MASTERIES_RESUME_ENDPOINT = 'https://api.guildwars2.com/v2/account/mas
 const API_MASTERIES_DETAIL_ENDPOINT = 'https://api.guildwars2.com/v2/masteries' // ?ids=1,2&lang=es'
 
 const getAuthData = async (url, token) => {
-    const res = await fetch(`url?access_token=${token}`)
+    const res = await fetch(`${url}?access_token=${token}`)
     return await res.json()
 }
 
